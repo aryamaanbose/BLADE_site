@@ -60,9 +60,9 @@ const config = {
         },
         {
           type: 'doc',
-          docId: 'datasets', // Assuming 'datasets' is the id of your doc
+          docId: 'about-us', // Make sure 'about-us' is the id of your document
           position: 'left',
-          label: 'Datasets',
+          label: 'About Us',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
@@ -85,6 +85,10 @@ const config = {
             {
               label: 'Installation',
               to: '/docs/installation',
+            },
+            {
+              label: 'About Us',
+              to: '/docs/about-us', // Make sure this URL is correct based on your document structure
             },
           ],
         },
