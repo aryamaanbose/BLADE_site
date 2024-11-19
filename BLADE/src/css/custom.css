@@ -1,35 +1,8 @@
 :root {
   /* Light mode default styles */
-  --ifm-background-color: #ffffff; /* Background for light mode */
-  --ifm-font-color-base: #000000; /* Text color for light mode */
-  --ifm-color-primary: #4A90E2; /* Primary color for light mode */
-}
-
-[data-theme='dark'] {
-  /* Dark mode styles */
-  --ifm-background-color: #121212; /* Background for dark mode */
-  --ifm-font-color-base: #e0e0e0; /* Text color for dark mode */
-  --ifm-color-primary: #90caf9; /* Primary color for dark mode */
-}
-
-/* Global fallback styles for both themes */
-* {
-  background-color: var(--ifm-background-color);
-  color: var(--ifm-font-color-base);
-  border-color: var(--ifm-color-primary);
-}
-
-/* Special styling for links */
-a {
-  color: var(--ifm-color-primary);
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-:root {
+  --ifm-background-color: #ffffff;
+  --ifm-font-color-base: #000000;
+  --ifm-color-primary: #4A90E2;
   --ifm-code-background: #f5f5f5;
   --ifm-code-color: #2d2d2d;
   --ifm-navbar-background-color: #ffffff;
@@ -37,49 +10,29 @@ a:hover {
 }
 
 [data-theme='dark'] {
+  /* Dark mode styles */
+  --ifm-background-color: #121212;
+  --ifm-font-color-base: #e0e0e0;
+  --ifm-color-primary: #90caf9;
   --ifm-code-background: #2d2d2d;
   --ifm-code-color: #f5f5f5;
   --ifm-navbar-background-color: #1a1a1a;
   --ifm-navbar-link-color: #cccccc;
 }
-:root {
-  /* Light mode default styles */
-  --ifm-background-color: #ffffff; /* Background for light mode */
-  --ifm-font-color-base: #000000; /* Text color for light mode */
-  --ifm-color-primary: #4A90E2; /* Primary color for light mode */
-  --ifm-code-background: #f5f5f5; /* Code block background for light mode */
-  --ifm-code-color: #2d2d2d; /* Code block text color for light mode */
-  --ifm-navbar-background-color: #ffffff; /* Navbar background for light mode */
-  --ifm-navbar-link-color: #333333; /* Navbar link color for light mode */
-}
 
-[data-theme='dark'] {
-  /* Dark mode styles */
-  --ifm-background-color: #121212; /* Background for dark mode */
-  --ifm-font-color-base: #e0e0e0; /* Text color for dark mode */
-  --ifm-color-primary: #90caf9; /* Primary color for dark mode */
-  --ifm-code-background: #2d2d2d; /* Code block background for dark mode */
-  --ifm-code-color: #f5f5f5; /* Code block text color for dark mode */
-  --ifm-navbar-background-color: #1a1a1a; /* Navbar background for dark mode */
-  --ifm-navbar-link-color: #cccccc; /* Navbar link color for dark mode */
-}
-
-/* Global fallback styles */
+/* Global styles */
 * {
   background-color: var(--ifm-background-color) !important;
   color: var(--ifm-font-color-base) !important;
   border-color: var(--ifm-color-primary) !important;
+  font-size: 20px !important;
+  font-family: 'Calibri', sans-serif !important;
+  box-shadow: none !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease;
 }
 
-/* Special styling for links */
-a {
-  color: var(--ifm-color-primary);
-}
 
-a:hover {
-  text-decoration: underline;
-  opacity: 0.8; /* Slight hover effect */
-}
 
 /* Code block styling */
 pre {
@@ -90,15 +43,16 @@ pre {
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.95em;
   overflow-x: auto;
-  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for light mode */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative; /* Required to position the copy button */
 }
 
 [data-theme='dark'] pre {
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for dark mode */
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 pre:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover effect for code blocks */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Inline code styling */
@@ -110,52 +64,7 @@ code {
   font-size: 0.9em;
 }
 
-/* Navbar styling */
-.navbar {
-  background-color: var(--ifm-navbar-background-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for light mode */
-}
-
-[data-theme='dark'] .navbar {
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Subtle shadow for dark mode */
-}
-
-.navbar__link {
-  color: var(--ifm-navbar-link-color);
-  font-weight: 500;
-}
-
-
-/* Reset box and shadow styles */
-* {
-  box-shadow: none !important;
-  border-radius: 4px !important;
-  transition: all 0.3s ease;
-}
-
-/* Code block container styling */
-pre {
-  background-color: var(--ifm-code-background);
-  color: var(--ifm-code-color);
-  padding: 1rem;
-  border-radius: 6px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.95em;
-  overflow-x: auto;
-  position: relative; /* Required to position the copy button */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for light mode */
-}
-
-[data-theme='dark'] pre {
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for dark mode */
-}
-
-/* Code block hover effect */
-pre:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover effect for code blocks */
-}
-
-/* Copy button styling */
+/* Copy button styling for code blocks */
 pre .copyButton {
   position: absolute;
   top: 10px;
@@ -167,8 +76,8 @@ pre .copyButton {
   padding: 5px 10px;
   font-size: 0.8rem;
   cursor: pointer;
-  transition: all 0.3s ease;
   opacity: 0.8;
+  transition: all 0.3s ease;
 }
 
 pre .copyButton:hover {
@@ -176,13 +85,12 @@ pre .copyButton:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Ensure copy button visibility in dark mode */
 [data-theme='dark'] pre .copyButton {
   background-color: var(--ifm-background-color);
   color: var(--ifm-color-primary);
 }
 
-/* Adjustments for small screens */
+/* Responsive adjustments for small screens */
 @media (max-width: 768px) {
   pre .copyButton {
     top: 5px;
@@ -190,4 +98,19 @@ pre .copyButton:hover {
     padding: 4px 8px;
     font-size: 0.75rem;
   }
+}
+
+/* Navbar link hover effect */
+.navbar__link:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Sidebar link hover effect */
+.menu__link:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Sidebar active link styling */
+.menu__link--active {
+  color: var(--ifm-color-primary) !important;
 }
