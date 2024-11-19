@@ -114,3 +114,13 @@ pre .copyButton:hover {
 .menu__link--active {
   color: var(--ifm-color-primary) !important;
 }
+
+/* Set hyperlinks in the main content to the primary color */
+.markdown a {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Optional: Hyperlink hover effect */
+.markdown a:hover {
+  text-decoration: underline;
+}
