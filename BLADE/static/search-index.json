@@ -1,0 +1,62 @@
+[
+  {
+    "title": "About Us",
+    "url": "/docs/about-us",
+    "content": "Research Focus\n[Describe the research focus of your team or project.]\nContact Details\nAryamaan Bose\n\nPosition: Research Technician in TGAC (Tumour Genome Analysis Core)\nEmail: a.bose1@amsterdamumc.nl\n"
+  },
+  {
+    "title": "Datasets",
+    "url": "/docs/datasets",
+    "content": "Datasets\nIn-House Processed scRNA Expression Profiles\nThis section includes details about the in-house processed single-cell RNA sequencing expression profiles available for download or analysis.\nDesc"
+  },
+  {
+    "title": "Installation Guide",
+    "url": "/docs/installation",
+    "content": "Installation Guide\nWelcome to the BLADE installation guide. This document will walk you through all necessary steps to install and set up BLADE on your system, including system requirements, installat"
+  },
+  {
+    "title": "Tutorial Intro",
+    "url": "/docs/intro",
+    "content": "How to Use the Snakemake Pipeline\nIntroduction\nSnakemake is a workflow management system that helps to create and manage complex workflows using Python. It’s widely used in bioinformatics to automate "
+  },
+  {
+    "title": "Overview",
+    "url": "/docs/overview",
+    "content": "Overview of BLADE\nIn the BLADE package, you can load the following functions and modules.\nBLADE: Core Algorithms\nA class object contains core algorithms of BLADE. Users can reach internal variables (N"
+  },
+  {
+    "title": "congratulations",
+    "url": "/docs/tutorial-basics/congratulations",
+    "content": "Congratulations!\nYou have just learned the basics of Docusaurus and made some changes to the initial template.\nDocusaurus has much more to offer!\nHave 5 more minutes? Take a look at versioning and i18"
+  },
+  {
+    "title": "create-a-blog-post",
+    "url": "/docs/tutorial-basics/create-a-blog-post",
+    "content": "Create a Blog Post\nDocusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...\nCreate your first Post\nCreate a file at blog/2021-02-28-greetings.md:\n---\nslug"
+  },
+  {
+    "title": "create-a-document",
+    "url": "/docs/tutorial-basics/create-a-document",
+    "content": "Create a Document\nDocuments are groups of pages connected through:\n\na sidebar\nprevious/next navigation\nversioning\n\nCreate your first Doc\nCreate a Markdown file at docs/hello.md:\n# Hello\n\nThis is my **"
+  },
+  {
+    "title": "create-a-page",
+    "url": "/docs/tutorial-basics/create-a-page",
+    "content": "Create a Page\nAdd Markdown or React files to src/pages to create a standalone page:\n\nsrc/pages/index.js → localhost:3000/\nsrc/pages/foo.md → localhost:3000/foo\nsrc/pages/foo/bar.js → localhost:3000/fo"
+  },
+  {
+    "title": "deploy-your-site",
+    "url": "/docs/tutorial-basics/deploy-your-site",
+    "content": "Deploy your site\nDocusaurus is a static-site-generator (also called Jamstack).\nIt builds your site as simple static HTML, JavaScript and CSS files.\nBuild your site\nBuild your site for production:\nnpm "
+  },
+  {
+    "title": "manage-docs-versions",
+    "url": "/docs/tutorial-extras/manage-docs-versions",
+    "content": "Manage Docs Versions\nDocusaurus can manage multiple versions of your docs.\nCreate a docs version\nRelease a version 1.0 of your project:\nnpm run docusaurus docs:version 1.0\n\nThe docs folder is copied i"
+  },
+  {
+    "title": "translate-your-site",
+    "url": "/docs/tutorial-extras/translate-your-site",
+    "content": "Translate your site\nLet&#39;s translate docs/intro.md to French.\nConfigure i18n\nModify docusaurus.config.js to add support for the fr locale:\nexport default {\n  i18n: {\n    defaultLocale: &#39;en&#39;"
+  }
+]

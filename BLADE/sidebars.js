@@ -23,8 +23,7 @@ const sidebars = {
           type: 'category',
           label: 'Tutorial - Basics',
           items: [
-            'tutorial-basics/Create-scRNA-signatures', 
-            'tutorial-basics/congratulations',
+             'tutorial-basics/congratulations',
             'tutorial-basics/create-a-blog-post',
             'tutorial-basics/create-a-page',
             'tutorial-basics/deploy-your-site',

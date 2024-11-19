@@ -5,10 +5,10 @@ const config = {
   title: 'BLADE',
   tagline: 'Bayesian Log Normal Deconvolution',
   favicon: 'img/favicon.ico',
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://your-docusaurus-site.example.com', // Replace with your actual site URL
   baseUrl: '/',
-  organizationName: 'your-org-name', // Usually your GitHub org/user name.
-  projectName: 'blade', // Usually your repo name.
+  organizationName: 'your-org-name', // Replace with your GitHub organization/user name
+  projectName: 'blade', // Replace with your GitHub repository name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -24,11 +24,11 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/your-org-name/blade/edit/main/',
+          editUrl: 'https://github.com/your-org-name/blade/edit/main/', // Link to edit docs in GitHub
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/your-org-name/blade/edit/main/',
+          editUrl: 'https://github.com/your-org-name/blade/edit/main/', // Link to edit blog posts in GitHub
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -38,7 +38,7 @@ const config = {
   ],
 
   themeConfig: {
-    image: 'img/logo_final_small.png',
+    image: 'img/logo_final_small.png', // Image used for social media previews
     navbar: {
       title: 'BLADE',
       logo: {
@@ -48,7 +48,7 @@ const config = {
       items: [
         {
           type: 'doc',
-          docId: 'installation', // Assuming 'installation' is the id of your doc
+          docId: 'installation',
           position: 'left',
           label: 'Installation',
         },
@@ -60,7 +60,7 @@ const config = {
         },
         {
           type: 'doc',
-          docId: 'about-us', // Make sure 'about-us' is the id of your document
+          docId: 'about-us',
           position: 'left',
           label: 'About Us',
         },
@@ -70,64 +70,22 @@ const config = {
           label: 'GitHub',
           position: 'right',
         },
+        // Placeholder for the search button (to be implemented in CustomNavbar)
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-            {
-              label: 'Installation',
-              to: '/docs/installation',
-            },
-            {
-              label: 'About Us',
-              to: '/docs/about-us', // Make sure this URL is correct based on your document structure
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} BLADE. Built with Docusaurus.`,
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
     },
   },
 };
