@@ -2,7 +2,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 
 const config = {
-  title: 'BLADE',
+  title: 'BLADE ',
   tagline: 'Bayesian Log Normal Deconvolution',
   favicon: 'img/favicon.ico',
   url: 'https://your-docusaurus-site.example.com', // Replace with your actual site URL
@@ -40,7 +40,7 @@ const config = {
   themeConfig: {
     image: 'img/logo_final_small.png', // Image used for social media previews
     navbar: {
-      title: 'BLADE',
+      title: 'BLADE v1.0.0',
       logo: {
         alt: 'BLADE Logo',
         src: 'img/logo_final_small.png',
@@ -82,6 +82,8 @@ const config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['python', 'r', 'bash'],
+
     },
     colorMode: {
       defaultMode: 'light',

@@ -29,18 +29,54 @@ BLADE is primarily tested on Linux-based operating systems. We recommend:
 
 ## Installation Steps
 
-### 1. Cloning the Repository
+### 1. Install 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import styles from '@site/src/css/custom.css';
 
-Begin by cloning the latest version of the BLADE codebase from the GitHub repository:
 
-```bash
-git clone https://github.com/aryamaanbose/BLADE_tasks.git
-cd BLADE_tasks
-```
+<Tabs>
+  <TabItem value="python" label="Python Installation" default>
+    To install **OncoBLADE** using pip, run the following command:
+
+    ```bash
+    pip install OncoBLADE
+    ```
+  </TabItem>
+
+  <TabItem value="r" label="R Installation">
+    To install **BLADE** from Bioconductor in R, use the following commands:
+
+    ```r
+    if (!requireNamespace("BiocManager", quietly = TRUE))
+        install.packages("BiocManager")
+    BiocManager::install("BLADE")
+    ```
+  </TabItem>
+
+  <TabItem value="github" label="GitHub Repository">
+    To clone the GitHub repository, execute:
+
+    ```bash
+    git clone https://github.com/aryamaanbose/BLADE_tasks.git
+    cd BLADE_tasks
+    ```
+  </TabItem>
+</Tabs>
 
 ### 2. Creating a Conda Environment
 
-To manage dependencies for BLADE, we recommend creating a Conda environment.
+To manage dependencies for BLADE, we recommend creating a Conda environment using the `environment.yml` file.
+
+1. **Download the `environment.yml` file**  
+   Click the button below to download the file: <a href="/BLADE-site/BLADE/static/environment.yml" download class="download-button">Download environment.yml</a>
+2. **Create the Conda environment**  
+   Open your terminal and navigate to the directory where the `environment.yml` file is located. Then, run the following command:
+
+   ```bash
+   conda env create -f environment.yml -n BLADE
+   ````
+
 
 #### Step 1: Installing Conda
 
@@ -138,9 +174,6 @@ If you have access to GPU resources or a specific node, you can configure Snakem
 
 After completing the installation steps, it is recommended to run a test workflow to ensure that everything is set up correctly. Follow the instructions in the `tests` directory of the repository to execute sample pipelines and verify the installation.
 
-## Troubleshooting
-
-If you encounter any issues during the installation or setup process, please refer to the [Troubleshooting](./troubleshooting.md) section or open an issue on the [GitHub repository](https://github.com/aryamaanbose/BLADE_tasks/issues).
 
 ## Additional Resources
 
