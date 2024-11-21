@@ -38,7 +38,13 @@ const sidebars = {
             'tutorial-extras/translate-your-site',
           ],
         },
+        
       ],
+    },
+    {
+      type: 'doc',
+      id: 'processed-signatures', // Make sure 'overview' is the correct ID and you have overview.md in your docs
+      label: 'Processed Signatures',
     },
     // Add additional categories or documents as needed
   ],
