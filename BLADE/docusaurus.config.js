@@ -58,6 +58,7 @@ const config = {
           position: 'left',
           label: 'Tutorial',
         },
+        
         {
           type: 'doc',
           docId: 'about-us',
@@ -70,15 +71,18 @@ const config = {
           label: 'GitHub',
           position: 'right',
         },
+        
         // Placeholder for the search button (to be implemented in CustomNavbar)
       ],
     },
+    
     docs: {
       sidebar: {
         hideable: true,
         autoCollapseCategories: true,
       },
     },
+    
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
