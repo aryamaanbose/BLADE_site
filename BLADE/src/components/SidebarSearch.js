@@ -63,3 +63,4 @@ const SidebarSearch = () => {
 };
 
 export default SidebarSearch;
+

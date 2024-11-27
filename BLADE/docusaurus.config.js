@@ -5,10 +5,10 @@ const config = {
   title: 'BLADE ',
   tagline: 'Bayesian Log Normal Deconvolution',
   favicon: 'img/favicon.ico',
-  url: 'https://your-docusaurus-site.example.com', // Replace with your actual site URL
-  baseUrl: '/',
-  organizationName: 'your-org-name', // Replace with your GitHub organization/user name
-  projectName: 'blade', // Replace with your GitHub repository name
+  url: 'https://aryamaanbose.github.io', // Your GitHub Pages URL
+  baseUrl: '/BLADE_site/',               // Base URL for your project site
+  organizationName: 'aryamaanbose',      // Your GitHub username
+  projectName: 'BLADE_site',             // Your GitHub repository name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -24,11 +24,11 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/your-org-name/blade/edit/main/', // Link to edit docs in GitHub
+          editUrl: 'https://github.com/aryamaanbose/BLADE_site/edit/main/BLADE/', // Link to edit docs in GitHub
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/your-org-name/blade/edit/main/', // Link to edit blog posts in GitHub
+          editUrl: 'https://github.com/aryamaanbose/BLADE_site/edit/main/BLADE/', // Link to edit blog posts in GitHub
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -58,7 +58,6 @@ const config = {
           position: 'left',
           label: 'Tutorial',
         },
-        
         {
           type: 'doc',
           docId: 'about-us',
@@ -71,24 +70,22 @@ const config = {
           label: 'GitHub',
           position: 'right',
         },
-        
-        // Placeholder for the search button (to be implemented in CustomNavbar)
       ],
     },
-    
+
     docs: {
       sidebar: {
         hideable: true,
         autoCollapseCategories: true,
       },
     },
-    
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['python', 'r', 'bash'],
-
     },
+
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true,

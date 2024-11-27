@@ -41,7 +41,7 @@ This page hosts our in-house single-cell RNA (scRNA) signatures for various appl
    - **Level 1**: Broad deconvolution tasks.
    - **Level 2**: Subtype-specific investigations.
    - **Level 3**: Detailed cell population studies.
-4. Refer to the [Tutorial](../tutorial/intro.md) for guidance on using these signatures in your workflows.
+4. Refer to the [Tutorial] for guidance on using these signatures in your workflows.
 
 ---
 
