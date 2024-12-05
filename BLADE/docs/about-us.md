@@ -11,7 +11,8 @@ sidebar_position: 5
 ## Contact Details
 
 ### Aryamaan Bose
-- **Position**: Research Technician in TGAC (Tumour Genome Analysis Core)
+- **Position**: Research Technician
+- **Department**: Department of Pathology
 - **Email**: [a.bose1@amsterdamumc.nl](mailto:a.bose1@amsterdamumc.nl)
 
 ### Yongsoo Kim
